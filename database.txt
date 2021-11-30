@@ -1,0 +1,1 @@
+{"2021-11-28": "Bedzie padac", "2021-11-27": "Nie bedzie padac", "2021-11-25": "Nie bedzie padac", "2021-02-25": "Nie wiem"}
