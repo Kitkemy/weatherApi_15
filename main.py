@@ -47,5 +47,12 @@ class WeatherForecast:
             file.write(json.dumps(self.database))
         return new_info
 
+    def items(self):
+        for date, value in self.database.items():
+            yield (date, value)
+
+
 wf = WeatherForecast(api_key=sys.argv[1])
 print(wf[sys.argv[2]])
+
+print(list(wf.items()))
