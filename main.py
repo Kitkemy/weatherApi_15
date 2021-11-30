@@ -51,8 +51,14 @@ class WeatherForecast:
         for date, value in self.database.items():
             yield (date, value)
 
+    def __iter__(self):
+        for date in self.database.keys():
+            yield date
 
 wf = WeatherForecast(api_key=sys.argv[1])
 print(wf[sys.argv[2]])
 
 print(list(wf.items()))
+
+for date in wf:
+    print(date)
